@@ -1,0 +1,9 @@
+; variable creation syntax: VAR, {size}, {type}, {name}, {value}
+VAR, 1024, byte, foo, empty 
+
+; stack instruction takes call number and arguments
+STACK, 0, 1024
+
+; methods are created with a .
+.Main
+    SYSTEM, 0, "Hello World!"
